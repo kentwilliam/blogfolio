@@ -1,0 +1,11 @@
+{
+  "name": "blogfolio",
+  "description": "personal site of Kent William Innholt",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "1.x",
+    "lodash": "2.x",
+    "express": "3.x",
+    "jade": "0.x"
+  }
+}
