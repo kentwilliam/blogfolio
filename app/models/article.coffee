@@ -13,4 +13,7 @@ Article.pre 'save', (next) ->
     @param_title = @title.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z-]/g, '')
   next()
 
+Article.methods.publishedDate = ->
+  (new Date(@published)).toDateString()
+
 module.exports = mongoose.model('Article', Article)

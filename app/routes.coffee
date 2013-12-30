@@ -4,7 +4,7 @@ errors   = require './controllers/errors'
 
 module.exports = (app) ->
   app.get '/', articles.index
-  app.get '/:param_title', articles.show
+  app.get '/posts/:param_title', articles.show
 
   app.use notFound
   app.use errors.default
