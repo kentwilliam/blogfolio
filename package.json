@@ -5,7 +5,8 @@
   "dependencies": {
     "coffee-script": "1.x",
     "lodash": "2.x",
+    "connect": "2.x",
     "express": "3.x",
-    "jade": "0.x"
+    "mongoose": "3.8.x"
   }
 }
