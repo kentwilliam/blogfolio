@@ -1,4 +1,10 @@
 config = require './config'
 mongoose = require 'mongoose'
-mongoose.connect(config.mongoHost, 'test', config.mongoPort)
+
+try
+  mongoose.connect config.mongoHost, 'test', config.mongoPort
+catch e
+  console.log "Failed to connect to MongoDB database"
+  process.exit 1
+
 module.exports = mongoose
