@@ -2,7 +2,7 @@ Article = require '../models/article'
 _       = require 'lodash'
 
 index = (req, res, next) ->
-  Article.find { published: {'$ne': null } }, (err, articles) ->
+  Article.find { published: { '$ne': null } }, (err, articles) ->
     render err, { articles: articles }, req, res, next
 
 show = (req, res, next) ->

@@ -12,62 +12,78 @@ body
   font-family copy
   font-weight 400
   font-size 100%
-  line-height 1.7rem
-  background #ddd
+  background white
 
-h1, h2, h3, h4, h5, h6
-  font-family novecento-medium
+h1, h2, h3, h4
+  font normal 18px novecento-light
   text-transform uppercase
-  font-weight normal
 
 a
-  text-transform uppercase
-  font-family novecento-light
-  display inline-block
+  color #1678bd
+  &:visited
+    // color #9735bc
 
-body > header
-  fixed top right
-  width 30%
-  height 100%
-  padding 2rem
-  background #333
-  color white
-  text-align center
+header
+  padding 20px
 
   h1
-    line-height 2rem
-    font-size 1rem
-    letter-spacing 3px
+    font 18px/21px novecento-light
 
-  a
-    color #9e6
-    font-size 0.9rem
-    text-decoration none
-    margin-right 0.7rem
-    letter-spacing 0.06rem
-    &:hover
-      color #bf8
-
-  .tagline
-    font-family novecento-light
-    text-transform uppercase
-    font-size 0.75rem
-    letter-spacing 0.06rem
-    color silver
-
-.content
-  background white
-  margin 0 30% 0 2%
-  padding 2rem 3rem
+.tagline,
+time
+  color #999
+  font italic 15px/22px book-style
+  line-height 1.2em
+  margin 5px 0 0
+  text-transform lowercase
 
 .articles
-  padding 2rem 0
-  max-width 45rem
-  margin 0 auto
-  h2
-    font-size 2.5rem
-    font-family novecento-light
+  font 16px/18px sans-serif
+  padding 5% 0 10%;
   article
-    margin 0 0 2rem 0
-  time
+    position relative
+  h2
+    font 22px/24px novecento-bold
+    padding 15px 20px 15px
+  p
+    padding 5px 20px
+    font 15px/22px book-style
+    color #444
+  img
+    width 100%
+    margin 0 0 10px
+
+.recent,
+.portfolio
+  font-size 12px
+  padding 20px 20px 45px
+  h2
+    margin 26px 0 10px
+    font 18px/20px novecento-light
+  nav a
     display block
+    font italic 15px/30px book-style
+    text-decoration none
+
+.recent
+  background #f6f6f6
+
+.portfolio
+  background #333
+  h2
+    color #ccc
+  a
+    color #c0e7ff
+    &:visited
+      // color #e9c2ff
+
+footer
+  padding 30px 20px 100px
+  background #333
+  font 18px/20px novecento-light
+  a
+    color #999
+    text-decoration none
+    border-bottom 1px dotted #999
+    &:hover
+      color white
