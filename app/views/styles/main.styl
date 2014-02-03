@@ -37,6 +37,9 @@ time
   margin 5px 0 0
   text-transform lowercase
 
+header.secondary
+  display none
+
 .articles
   font 16px/18px sans-serif
   padding 5% 0 10%;
@@ -47,11 +50,12 @@ time
     padding 15px 20px 15px
   p
     padding 5px 20px
-    font 15px/22px book-style
+    font 15px/27px book-style
     color #444
+  .image
+    margin 0 0 10px
   img
     width 100%
-    margin 0 0 10px
 
 .recent,
 .portfolio
@@ -60,10 +64,12 @@ time
   h2
     margin 26px 0 10px
     font 18px/20px novecento-light
-  nav a
-    display block
-    font italic 15px/30px book-style
-    text-decoration none
+  nav
+    a
+      display block
+      padding 6px 0
+      font italic 15px/21px book-style
+      text-decoration none
 
 .recent
   background #f6f6f6
@@ -87,3 +93,59 @@ footer
     border-bottom 1px dotted #999
     &:hover
       color white
+
+@media (min-width: 600px)
+  header
+    &.main
+      display none
+    &.secondary
+      display block
+      padding 0
+      absolute top 73px
+  .centered
+    display flex
+    justify-content center
+    min-height 1500px
+    &:before
+      content ''
+      flex-grow 1
+    &:after
+      content ''
+      background #333
+      flex-grow 1
+  .content
+    width 60%
+    max-width 60rem
+  .articles
+    padding-top 166px
+    h2
+      font 28px/36px novecento-bold
+      padding 15px 50px 15px 30px
+    p
+      margin 0 30px 1.4rem 30px
+      padding 0
+    .image
+      width 48%
+      overflow hidden
+      height 0
+      padding-bottom 48%
+      background silver
+      float left
+      margin 8px 30px 30px 0
+    img
+      width auto
+      height 100%
+      margin-left -50%
+  .recent,
+  .portfolio
+    width 20rem
+    padding-top 160px
+
+@media (min-width: 1200px)
+  .articles
+    padding-top 166px
+    h2
+      font 28px/36px novecento-bold
+      padding-left 25%
+    p
+      margin-left 25%
